@@ -1,0 +1,18 @@
+//write a c program to find n factorial using sub function
+#include<stdio.h>
+long int factorial(int);
+void main()
+{
+	int n;
+	long int fact;
+	scanf("%d",&n);
+	fact=factorial(n);
+	printf("factorial of %d:%d",n,fact);
+}
+long int factorial(int n)
+{
+	if(n==1)
+	 return 1;
+	else
+	  return n*factorial(n-1);
+}

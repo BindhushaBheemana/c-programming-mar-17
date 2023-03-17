@@ -1,0 +1,14 @@
+//write a c program to find n cube using sub function
+#include<stdio.h>
+long int cube(int);
+void main()
+{
+	int n,c;
+	scanf("%d",&n);
+	c=cube(n);
+	printf("cube of %d:%d",n,c);
+}
+long int cube(int n)
+{
+   return n*n*n;
+}
